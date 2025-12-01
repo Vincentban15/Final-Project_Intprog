@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4 - Links & Navigation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+</nav>
+
+<div class="container">
+    <h1>Lesson 4: Links & Navigation</h1>
+    <p class="subtitle">Anchors, Internal/External Links, Mailto, Link Attributes</p>
+
+    <section>
+        <h2>Creating Links</h2>
+        <p>Use the <code>&lt;a&gt;</code> tag to create hyperlinks:</p>
+        <pre class="code">&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+&lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;</pre>
+
+        <button class="collapsible">Definition</button>
+        <div class="content">
+            <p>Anchors allow users to navigate within a page or to external sites. Attributes like <code>target="_blank"</code> open links in new tabs.</p>
+        </div>
+    </section>
+
+    <div class="lesson-navigation">
+        <a href="lesson3.html" class="lesson-nav prev">« Previous Lesson</a>
+        <a href="lesson5.html" class="lesson-nav next">Next Lesson »</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

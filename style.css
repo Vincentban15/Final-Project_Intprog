@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    color: #eee;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(20,20,20,0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+nav a {
+    color: #ff3b3b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.lesson-card {
+    background: rgba(30,30,30,0.9);
+    border-radius: 20px;
+    padding: 30px 25px;
+    margin: 20px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.lesson-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255,0,0,0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff3b3b;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #ff5b5b;
+    margin-top: 25px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.lesson-nav {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 18px 35px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg,#ff3b3b,#ff6b6b);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+
+.lesson-nav:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(255,0,0,0.7);
+}
+
+pre.code {
+    background: rgba(40,40,40,0.9);
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    overflow-x: auto;
+    position: relative;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    background: #ff3b3b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background: #ff6b6b;
+}
+
+.collapsible {
+    background: #222;
+    color: #ff3b3b;
+    cursor: pointer;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.active, .collapsible:hover {
+    background: #ff3b3b;
+    color: #111;
+}
+
+.content {
+    padding: 15px 25px; 
+    display: none;
+    overflow: hidden;
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    font-size: 1.5rem; 
+    line-height: 1.8;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    .lesson-nav {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .content {
+        font-size: 1.4rem;
+        padding: 12px 18px;
+    }
+    .collapsible {
+        font-size: 1.2rem;
+        padding: 12px 18px;
+    }
+}
